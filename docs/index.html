@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/app.css">
+
+  <title>N Chars Editor</title>
+</head>
+
+<body>
+
+  <header class="top-app-bar">
+
+    <section class="top-app-bar__section">
+      <input type="number" id="maxlength-input" class="top-app-bar__input--title" value="280" placeholder="N">
+      <h1 class="top-app-bar__title">Chars Editor</h1>
+    </section>
+
+    <section class="top-app-bar__section">
+      <button class="image-button" id="copy-button">
+        <img src="assets/copy.svg" />
+      </button>
+      <button class="image-button" id="paste-button">
+        <img src="assets/paste.svg" />
+      </button>
+    </section>
+  </header>
+
+  <main class="main">
+    <textarea class="editor-textarea" id="editor-textarea" maxlength="280"></textarea>
+    <div id="editor-counter" class="editor-counter"></div>
+  </main>
+
+
+  <script type="module" src="/scripts/app.js"></script>
+</body>
+
+</html>

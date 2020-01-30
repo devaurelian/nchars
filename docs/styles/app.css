@@ -1,0 +1,78 @@
+:root {
+    --primary: #6200ee;
+  }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.top-app-bar {
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 1rem;
+}
+
+.top-app-bar__section {
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+.top-app-bar__input--title {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid;
+    color: #fff;
+    margin-right: 0.5rem;
+    text-align: right;
+    width: 6ch;
+}
+
+.top-app-bar__input--title:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.top-app-bar__title, .top-app-bar__input--title {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-app-bar__title {
+    margin: 0;
+}
+
+.image-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.editor-textarea {
+    height: 80vh;
+    width: 100%;
+}
+
+.editor-textarea:focus {
+    outline-color: var(--primary);
+}
+
+.editor-counter {
+    color: var(--primary);
+    text-align: right;
+}
